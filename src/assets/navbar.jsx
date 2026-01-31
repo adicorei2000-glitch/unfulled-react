@@ -1,27 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link, } from 'react-router-dom';
 
-export const Navbar = () => {
+
+
+function Navbar() {
   return (
-    <div style={{display:"flex",justifyContent:"space-evenly",padding:"10px",backgroundColor:"lightgray",
-    fontWeight:"normal",fontSize:"20px"}}>
-     <Link to="/home">
-        <div style={{fontSize:"20px",cursor:"pointer"}}>Home</div>
-        </Link>
-        <Link to="/contact">
-        <div style={{fontSize:"20px",cursor:"pointer"}}>Contact</div>
-        </Link>
-        <Link to="/about">
-        <div style={{fontSize:"20px",cursor:"pointer"}}>About</div>
-        </Link>
-        <Link to="/services">
-        <div style={{fontSize:"20px",cursor:"pointer"}}>Services</div>
-        </Link>
-        <Link to="/portfolio">
-        <div style={{fontSize:"20px",cursor:"pointer"}}>Portfolio</div>
-        </Link>
+    <div style={{ display: "flex", justifyContent: "space-evenly", padding: "20px", fontSize: "larger", backgroundColor: "#f0f0f0" }}>
+
+
+
+      <Link to="/home">
+        Home
+      </Link>
+      <Link to="/contact">
+        Contact
+      </Link>
+      <Link to="/about">
+        About
+      </Link>
+      <Link to="/services">
+        Services
+      </Link>
+      <Link to="/portfolio">
+        Portfolio
+      </Link>
+      <Link to="/todo">
+        To-Do
+      </Link>
     </div>
-  )
+  );
 }
+
+
+
+
 export default Navbar
 

@@ -27,6 +27,9 @@ function Navbar() {
       <Link to="/todo">
         To-Do
       </Link>
+      <Link to="/ApiConnect">
+        API Connect
+      </Link>
     </div>
   );
 }

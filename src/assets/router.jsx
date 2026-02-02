@@ -10,6 +10,7 @@ import ErrorComponent from './error'
 import LoginComp from './pages/login'
 import Navbar from './navbar'
 import ToDoComponent from './todo'
+import ApiConnect from './pages/ApiConnect'
 
 const RouterComp = () => {
   return (
@@ -25,6 +26,9 @@ const RouterComp = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/todo" element={<ToDoComponent />} />
         <Route path='*' element={<ErrorComponent />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="ApiConnect" element={<ApiConnect />} />
+
 
       </Routes>
 

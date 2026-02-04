@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import HomeComponent from './home'
 import ContactComponent from './contact'
 import AboutComponent from './about'
@@ -11,6 +11,9 @@ import LoginComp from './pages/login'
 import Navbar from './navbar'
 import ToDoComponent from './todo'
 import ApiConnect from './pages/ApiConnect'
+import Advence from './pages/Advence'
+// import DetailPage from './pages/DetailPage'
+
 
 const RouterComp = () => {
   return (
@@ -25,9 +28,10 @@ const RouterComp = () => {
         <Route path="/services" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/todo" element={<ToDoComponent />} />
-        <Route path='*' element={<ErrorComponent />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="ApiConnect" element={<ApiConnect />} />
+        <Route path="/ApiConnect" element={<ApiConnect />} />
+        {/* <Route path="/api/:id" element={<DetailPage />} /> */}
+        <Route path="/AdvenceApi" element={<Advence />} />
+        <Route path="*" element={<ErrorComponent />} />
 
 
       </Routes>

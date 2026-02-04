@@ -34,8 +34,10 @@ const ToDoComponent = () => {
                         value={text}
                         onChange={(e) => setText(e.target.value)}
                         placeholder="Add todo"
+
                     />
                     <button type="submit">Add</button>
+                    <span>Total: {todos.length}</span>
 
                 </form>
 

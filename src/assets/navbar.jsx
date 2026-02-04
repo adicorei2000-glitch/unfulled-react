@@ -1,11 +1,17 @@
-import React from 'react';
-import { Link, } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 function Navbar() {
   return (
-    <div style={{ display: "flex", justifyContent: "space-evenly", padding: "20px", fontSize: "larger", backgroundColor: "#f0f0f0" }}>
+    <div style={{
+      display: "flex", justifyContent: "space-evenly", padding: "20px", fontSize: "larger", backgroundColor: "#f0f0f0",
+      fontWeight: "bold",
+      hover: {
+        color: "blue", textDecoration: "underline", cursor: "pointer",
+      }
+    }
+    } >
 
 
 
@@ -30,7 +36,12 @@ function Navbar() {
       <Link to="/ApiConnect">
         API Connect
       </Link>
-    </div>
+      <Link to="/AdvencedApi">
+        Advanced API
+      </Link>
+
+
+    </ div>
   );
 }
 

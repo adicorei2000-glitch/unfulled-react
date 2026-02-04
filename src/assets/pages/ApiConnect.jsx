@@ -22,11 +22,13 @@ const ApiConnect = () => {
                 users.map(user => (
                     <Card key={user.id}>
                         <Link to={`/api/${user.id}`}>
-                            <p>{user.name}</p>
-                            <p>{user.email}</p>
-                            <p>{user.phone}</p>
-                            <p>{user.website}</p>
-                            <p>{user.address?.city}</p>
+                          
+                                <p>{user.name}</p>
+                                <p>{user.email}</p>
+                                <p>{user.phone}</p>
+                                <p>{user.website}</p>
+                                <p>{user.address?.city}</p>
+                            
                         </Link>
                     </Card>
                 ))

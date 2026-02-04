@@ -36,8 +36,8 @@ function Navbar() {
       <Link to="/ApiConnect">
         API Connect
       </Link>
-      <Link to="/AdvencedApi">
-        Advanced API
+      <Link to="/AdvenceApi">
+        Advance API
       </Link>
 
 
